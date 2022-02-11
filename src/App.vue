@@ -2,16 +2,20 @@
   <Header/>
   <Banner/>
   <Status/>
+  <P-Indicator/>
+  <PiFirstStep/>
 </template>
 
 <script>
 import Header from './components/Layout/Header.vue'
 import Banner from './components/Banner/Banner.vue'
 import Status from './components/Status/Status.vue'
+import PIndicator from './components/P-Indicator/P-Indicator.vue'
+import PiFirstStep from './components/PI-FirstStep/PI-FirstStep.vue'
 export default {
   name: 'App',
   components: {
-    Header, Banner, Status,
+    Header, Banner, Status, PIndicator, PiFirstStep
     
   }
 }
