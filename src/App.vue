@@ -3,7 +3,7 @@
   <Banner/>
   <Status/>
   <P-Indicator/>
-  <PiThirdStep/>
+  <PiLastStep/>
 </template>
 
 <script>
@@ -14,10 +14,11 @@ import PIndicator from './components/P-Indicator/P-Indicator.vue'
 import PiFirstStep from './components/PI-FirstStep/PI-FirstStep.vue'
 import PiSecondStep from './components/PiSecondStep/PiSecondStep.vue'
 import PiThirdStep from './components/PiThirdStep/PiThirdStep.vue'
+import PiLastStep from './components/PiLastStep/PiLastStep.vue'
 export default {
   name: 'App',
   components: {
-    Header, Banner, Status, PIndicator, PiFirstStep, PiSecondStep, PiThirdStep
+    Header, Banner, Status, PIndicator, PiFirstStep, PiSecondStep, PiThirdStep, PiLastStep
     
   }
 }

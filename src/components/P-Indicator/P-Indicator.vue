@@ -1,6 +1,6 @@
 <template>
     <div id="progress-indicator">
-        <h5 class="step3">Adim 3/4</h5>
+        <h5 class="step4">Adim 4/4</h5>
         <div class="pi-texts">
             <h3 class="pi-text">Otel <br>Secimi</h3>
             <h3 class="pi-text">Tarih ve Kisi <br> Secimi</h3>
