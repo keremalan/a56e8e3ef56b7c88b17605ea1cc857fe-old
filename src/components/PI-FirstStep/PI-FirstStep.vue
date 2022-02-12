@@ -1,5 +1,13 @@
 <template>
     <div id="pi-first">
+        <div>Otel: {{ selectedHotel }}</div>
+        <select v-model="selectedHotel">
+            <option disabled value="Otel seciminizi yapin"></option>
+            <option>The Huxley Hotel, Istanbul</option>
+        </select>
+        <Spacer/>
+        <hr>
+        <h2 class="pi-headline2">Oteller</h2>
         <div class="pi-f-top">
             <div class="pi-f-top-left">
                 <img :src="HotelImg"/>
@@ -31,8 +39,17 @@
 <script>
 import './PI-FirstStep.scss';
 import HotelImg from '@/assets/hotel-image.png';
+import Spacer from '../Spacer/Spacer.vue';
 export default {
+    data() {
+        return {
+            selectedHotel: 'The Huxley Hotel, Istanbul'
+        }
+    },
     name: 'PiFirstStep',
+    components: {
+        Spacer,
+    },
     setup() {
         return {
             HotelImg
