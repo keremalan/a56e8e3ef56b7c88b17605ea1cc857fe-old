@@ -1,7 +1,6 @@
 .pi-last {
     max-width: 980px;
     margin: 3vh auto 0;
-    height: 60vh;
 }
 
 .pi-last--checkout {
@@ -199,6 +198,7 @@ strong {
 .reservation-buttons {
     display: flex;
     flex-direction: row;
+    margin-bottom: 12vh;
 }
 
 .reservation-button-right {
