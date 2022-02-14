@@ -54,3 +54,24 @@
     background-color: var(--darkButton);
     color: var(--thirdColor);
 }
+
+@media only screen and (max-width: 375px) {
+    .roomType-headline2, .roomScenic-headline2 {
+        margin: 0 4vw;
+    }
+    .room-types, .room-scenics {
+        flex-direction: column;
+        padding: 0 4vw;
+    }
+}   
+
+
+@media only screen and (max-width: 414px) {
+    .roomType-headline2, .roomScenic-headline2 {
+        margin: 0 4vw;
+    }
+    .room-types, .room-scenics {
+        flex-direction: column;
+        padding: 0 4vw;
+    }
+}   

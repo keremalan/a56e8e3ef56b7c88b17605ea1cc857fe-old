@@ -12,45 +12,6 @@
 .pi-headline2 {
     margin: 2vh 0 1vh 0;
 }
-
-.pi-f-top {
-    display: flex;
-}
-
-.pi-f-top-right {
-    display: flex;
-    flex-direction: column;
-    flex: 5;
-    padding-left: 2vw;
-}
-
-.pi-f-top-right > h3 {
-    font-weight: 600;
-}
-
-.pi-f-top-right > h4 {
-    margin-top: 2vh;
-    font-weight: 600;
-}
-
-.pi-f-top-right-services > span {
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.pi-f-top-right-services > span:not(.first) {
-    padding: 0 12px;
-}
-
-.pi-f-top-left {
-    display: flex;
-    flex: 2.3;
-}
-
-.pi-f-top-left > img {
-    width: 100%;
-    max-width: 299px;
-}
-
 .mt {
     margin-top: 0.3vh;
 }
@@ -64,4 +25,77 @@ button {
     border: none;
     font-size: 1.2rem;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+    .pi-first-hotel {
+        padding: 2vh 4vw 1vh 4vw;
+    }
+    .pi-first-select {
+        margin: 0 4vw 1vh 4vw;
+    }
+    .pi-first-hr {
+        margin: 0 4vw;
+    }
+    .pi-headline2 {
+        margin: 1vh 4vw;
+    }
+    button {
+        margin: 2vh 4vw;
+        margin-bottom: 2vh;
+    }
+    #status-bar {
+        display: none;
+    }
+    #progress-indicator {
+        display: none;
+    }
+    .banner-info {
+        display: none;
+    }
+    .logo-img {
+        min-width: 120px;
+    }
+    header > .header-nav {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 414px) {
+    .hotel-card {
+        flex-direction: column!important;
+        margin: 0 4vw;
+    }
+    .pi-first-hotel {
+        padding: 2vh 4vw 1vh 4vw;
+    }
+    .pi-first-select {
+        margin: 0 4vw 1vh 4vw;
+    }
+    .pi-first-hr {
+        margin: 0 4vw;
+    }
+    .pi-headline2 {
+        margin: 1vh 4vw;
+    }
+    button {
+        margin: 2vh 4vw;
+        margin-bottom: 2vh;
+    }
+    #status-bar {
+        display: none;
+    }
+    #progress-indicator {
+        display: none;
+    }
+    .banner-info {
+        display: none;
+    }
+    .logo-img {
+        min-width: 120px;
+    }
+    header > .header-nav {
+        display: none;
+    }
 }

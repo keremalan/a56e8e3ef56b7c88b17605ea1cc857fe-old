@@ -1,45 +1,28 @@
 <template>
+    <StatusVue/>
+    <PIndicatorVue/>
     <div id="pi-first">
-        <div>Otel: {{ selectedHotel }}</div>
-        <select v-model="selectedHotel">
+        <div class="pi-first-hotel">Otel: {{ selectedHotel }}</div>
+        <select v-model="selectedHotel" class="pi-first-select">
             <option disabled value="Otel seciminizi yapin"></option>
             <option>The Huxley Hotel, Istanbul</option>
         </select>
         <Spacer/>
-        <hr>
+        <hr class="pi-first-hr">
         <h2 class="pi-headline2">Oteller</h2>
-        <div class="pi-f-top">
-            <div class="pi-f-top-left">
-                <img :src="HotelImg"/>
-            </div>
-            <div class="pi-f-top-right">
-                <h3>The Huxley Hotel, Istanbul</h3>
-                <h4>Sunulan Hizmetler</h4>
-                <div class="pi-f-top-right-services">
-                    <span class="services-item first">Ucretsiz park</span>
-                    <span class="services-item">Ucretsiz Wi-Fi</span>
-                    <span class="services-item">Sigara icilmeyen odalar</span>
-                    <span class="services-item">Restoran</span>
-                    <span class="services-item">Kapali havuz</span>
-                </div>
-                <div class="pi-f-top-right-services mt">
-                    <span class="services-item first">Acik havuz</span>
-                    <span class="services-item">Evcil hayvan kabulu</span>
-                    <span class="services-item">Is alanlari</span>
-                    <span class="services-item">SPA</span>
-                </div>
-            </div>
-        </div>
+        <HotelCard hotelName="The Huxley Hotel, Istanbul"/>
         <div class="pi-f-bottom">
-            <button>Ileri</button>
+            <button><a href="#/step2">Ileri</a></button>
         </div>
     </div>
 </template>
 
 <script>
+import StatusVue from '../Status/Status.vue';
+import PIndicatorVue from '../P-Indicator/P-Indicator.vue';
 import './PI-FirstStep.scss';
-import HotelImg from '@/assets/hotel-image.png';
 import Spacer from '../Spacer/Spacer.vue';
+import HotelCard from '../HotelCard/HotelCard.vue';
 export default {
     data() {
         return {
@@ -48,12 +31,7 @@ export default {
     },
     name: 'PiFirstStep',
     components: {
-        Spacer,
+        Spacer, HotelCard, PIndicatorVue, StatusVue
     },
-    setup() {
-        return {
-            HotelImg
-        };
-    }
 }
 </script>

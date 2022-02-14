@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="header-brand">
-            <img :src="Logo"/>
+            <img :src="Logo" class="logo-img" />
         </div>
         <div class="header-nav">
             <a href="#">bilgi</a>

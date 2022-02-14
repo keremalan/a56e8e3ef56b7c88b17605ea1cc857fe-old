@@ -22,8 +22,8 @@
 
 .reservationOverview {
     display: flex;
-    flex-direction: row;
-    width: 55%;
+    flex-direction: row!important;
+    width: 55%!important;
 }
 
 .reservationOverview-left, .reservationOverview-right {
@@ -203,4 +203,163 @@ strong {
 
 .reservation-button-right {
     margin-left: 10vw;
+}
+
+.display-none-desktop {
+    display: none;
+}
+
+.display-none-desktop--hr {
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .pi-last-headline2 {
+        margin: 0 4vw;
+    }
+
+    .pi-last--checkout {
+        flex-direction: column;
+    }
+
+    .checkout--cardInfo {
+        margin: 2vh 4vw;
+    }
+    
+    .cardInfo-icon--img {
+        min-width: 30px;
+    }
+
+    .cardInfoBottom--logoImg {
+        min-width: 50px;
+    }
+
+    .checkout--cardInput, .pi-last--checkout--reservationOverview {
+        margin: 2vh 4vw;
+    }
+
+    .display-none-desktop {
+        display: flex;
+        margin: 2vh auto;
+    }
+
+    .display-none-desktop--hr {
+        display: flex;
+        width: 92%;
+        margin: 4vh auto;
+    }
+
+    .reservationOverview {
+        text-align: center;
+        padding: 0 16vw;
+    }
+
+
+    .coupon {
+        margin: 0 auto;
+    }
+
+    .reservationOverview-bottom--roomPrice, .reservationOverview-bottom--priceEffect, .reservationOverview-bottom--dates, .reservationOverview-bottom--discount {
+        margin: 2vh auto;
+        width: 80%;
+    }
+
+    .reservationOverview-hr {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .reservationOverview-price {
+        margin: 2vh auto;
+    }
+
+    .reservation-buttons {
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .pi-last--heckout--reservationOverview-h3 {
+        margin: 0 auto;
+    }
+
+    .paymentOverview-roomPrice, .paymentOverview-priceEffect, .paymentOverview-dates, .paymentOverview-discount {
+        margin: 0.4vh 0;
+    }
+}
+
+
+@media only screen and (max-width: 415px) {
+    
+    .pi-last-headline2 {
+        margin: 0 4vw;
+    }
+
+    .pi-last--checkout {
+        flex-direction: column;
+    }
+
+    .checkout--cardInfo {
+        margin: 2vh 4vw;
+    }
+    
+    .cardInfo-icon--img {
+        min-width: 30px;
+    }
+
+    .cardInfoBottom--logoImg {
+        min-width: 50px;
+    }
+
+    .checkout--cardInput, .pi-last--checkout--reservationOverview {
+        margin: 2vh 4vw;
+    }
+
+    .display-none-desktop {
+        display: flex;
+        margin: 2vh auto;
+    }
+
+    .display-none-desktop--hr {
+        display: flex;
+        width: 92%;
+        margin: 4vh auto;
+    }
+
+    .reservationOverview {
+        text-align: center;
+        padding: 0 16vw;
+    }
+
+
+    .coupon {
+        margin: 0 auto;
+    }
+
+    .reservationOverview-bottom--roomPrice, .reservationOverview-bottom--priceEffect, .reservationOverview-bottom--dates, .reservationOverview-bottom--discount {
+        margin: 2vh auto;
+        width: 80%;
+    }
+
+    .reservationOverview-hr {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .reservationOverview-price {
+        margin: 2vh auto;
+    }
+
+    .reservation-buttons {
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .pi-last--heckout--reservationOverview-h3 {
+        margin: 0 auto;
+    }
+
+    .paymentOverview-roomPrice, .paymentOverview-priceEffect, .paymentOverview-dates, .paymentOverview-discount {
+        margin: 0.4vh 0;
+    }
 }

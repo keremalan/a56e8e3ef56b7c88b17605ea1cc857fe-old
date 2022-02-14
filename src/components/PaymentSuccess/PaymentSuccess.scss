@@ -2,6 +2,10 @@
     --secondaryColor: #FFFFFF;
 }
 
+a {
+    color: white!important;
+}
+
 .paymentSuccess {
     max-width: 680px;
     margin: 3vh auto 0;
@@ -107,4 +111,67 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 2vh 0 0 0; 
+}
+
+@media only screen and (max-width: 375px) {
+    .reservationOverview {
+        flex-direction: column!important;
+    }
+
+    .reservationOverview-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reservationOverview-details--date, .reservationOverview-details--person, .reservationOverview-details--room {
+        margin: 2vh 0;
+    }
+
+    .paymentOverview {
+        margin: 0 auto;
+        width: 92%;
+    }
+
+    .reservationOptions {
+        margin-top: 6vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paymentSuccess-icon {
+        min-width: 40px;
+        margin-bottom: 2vh;
+    }
+}
+
+
+@media only screen and (max-width: 414px) {
+    .reservationOverview {
+        flex-direction: column!important;
+    }
+
+    .reservationOverview-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reservationOverview-details--date, .reservationOverview-details--person, .reservationOverview-details--room {
+        margin: 2vh 0;
+    }
+
+    .paymentOverview {
+        margin: 0 auto;
+        width: 92%;
+    }
+
+    .reservationOptions {
+        margin-top: 6vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paymentSuccess-icon {
+        min-width: 40px;
+        margin-bottom: 2vh;
+    }
 }

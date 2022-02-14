@@ -4,7 +4,7 @@
             <img :src="PaymentSuccess" class="paymentSuccess-icon">
             <h2>Rezervasyonunuz basariyla gerceklesmistir.</h2>
             <span>Rezervasyon kaydinizda degisiklik yapabilir veya yeni rezervasyon olusturabilirsiniz.</span>
-            <button>Yazdir</button>
+            <button onclick="window.print();">Yazdir</button>
         </div>
         <div class="reservationOverview">
             <h2>Rezervasyon Detaylari</h2>
@@ -66,9 +66,9 @@
             </div>
         </div>
         <div class="reservationOptions">
-            <button>Yeni Rezervasyon Yap</button>
-            <button>Rezervasyonu Guncelle</button>
-            <button>Rezervasyonu Iptal Et</button>
+            <button><a href="#/">Yeni Rezervasyon Yap</a></button>
+            <button><a href="#/step2">Rezervasyonu Guncelle</a></button>
+            <button v-on:click="alert">Rezervasyonu Iptal Et</button>
         </div>
     </div>
 </template>
@@ -85,5 +85,10 @@ export default {
             RoomType1,
         };
     },
+    methods: {
+        alert: function (event) {
+            alert('Rezervasyon iptali icin canli destege ulasin.')
+        }
+    }
 }
 </script>

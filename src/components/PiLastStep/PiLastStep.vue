@@ -1,6 +1,8 @@
 <template>
+    <StatusVue/>
+    <PIndicatorVue/>
     <div class="pi-last">
-        <h2>Onizleme ve Odeme Islemleri</h2>
+        <h2 class="pi-last-headline2">Onizleme ve Odeme Islemleri</h2>
         <div class="pi-last--checkout">
             <div class="pi-last--checkout--cardInfo">
                 <div class="checkout--cardInfo">
@@ -69,8 +71,10 @@
                     </div>
                 </div>
             </div>
+            <hr class="display-none-desktop--hr">
+            <h2 class="display-none-desktop">Odeme Bilgileri</h2>
             <div class="pi-last--checkout--reservationOverview">
-                <h3>The Huxley Hotel, Istanbul</h3>
+                <h3 class="pi-last--heckout--reservationOverview-h3">The Huxley Hotel, Istanbul</h3>
                 <div class="reservationOverview">
                     <div class="reservationOverview-left">
                         <div class="reservationOverview-left--startDate">
@@ -102,7 +106,7 @@
                     </div>
                 </div>
                 <div class="coupon">
-                    <input v-model="couponCode"><button class="btn-coupon">Kodu Kullan</button>
+                    <input v-model="couponCode" placeholder="{{ couponCode }}"><button class="btn-coupon">Kodu Kullan</button>
                 </div>
                 <div class="reservationOverview-bottom">
                     <div class="reservationOverview-bottom--roomPrice"><strong>Oda Fiyati</strong>1.127 TL</div>
@@ -118,17 +122,20 @@
             </div>
         </div>
         <div class="reservation-buttons">
-            <button>Geri</button><button class="reservation-button-right">Odeme Yap ve Bitir</button>
+            <button><a href="#/step3">Geri</a></button><button class="reservation-button-right"><a href="#/reservationsuccess">Odeme Yap</a></button>
         </div>
     </div>
 </template>
 <script>
+import StatusVue from '../Status/Status.vue';
+import PIndicatorVue from '../P-Indicator/P-Indicator.vue';
 import MasterCardLogo from '@/assets/mc_symbol.svg';
 import CardChip from '@/assets/chip.png';
 import './PiLastStep.scss';
 export default {
         data() {
         return {
+            couponCode: ' CODE100',
             cardHolderName: 'Isim Soyisim',
             cardNumber: '0000 0000 0000 00000',
             cardCVV: '',
@@ -141,6 +148,9 @@ export default {
         return {
             MasterCardLogo, CardChip
         };
+    },
+    components: {
+        StatusVue, PIndicatorVue
     }
 }
 </script>

@@ -1,5 +1,9 @@
 <template>
+    <StatusVue/>
+    <PIndicatorVue/>
     <div class="pi-second">
+        <h2 class="pi-second-headline2">Tarih ve Kisi Secimi</h2>
+        <span class="pi-second-span">Otele giris ve cikis tarihlerinizle birlikte, ziyaretinize kac kisinin katilacagini seciniz.</span>
         <div class="pi-second-inputs">
             <div class="dates">
             <div class="dates-startDate">
@@ -68,20 +72,25 @@
             </div>
         </div>
         </div>
-        <button>Ileri</button>
+        <button><a href="#/">Geri</a></button><button><a href="#/step3">Ileri</a></button>
     </div>
 </template>
 <script>
+import StatusVue from '../Status/Status.vue';
+import PIndicatorVue from '../P-Indicator/P-Indicator.vue';
 import './PiSecondStep.scss';
 export default {
     data() {
         return {
-            startDate: '',
-            endDate: '',
-            personAdult: '',
-            personChild: '',
+            startDate: '2022-02-13',
+            endDate: '2022-02-14',
+            personAdult: '0',
+            personChild: '0',
         }
     },
-    name: 'PiSecondStep'
+    name: 'PiSecondStep',
+    components: {
+        StatusVue, PIndicatorVue
+    },
 }
 </script>
