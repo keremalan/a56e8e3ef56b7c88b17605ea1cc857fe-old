@@ -1,6 +1,6 @@
 <template>
     <StatusVue/>
-    <PIndicatorVue/>
+    <PIndicatorVue stepCount="Adim 1/4"/>
     <div id="pi-first">
         <div class="pi-first-hotel">Otel: {{ selectedHotel }}</div>
         <select v-model="selectedHotel" class="pi-first-select">

@@ -16,7 +16,6 @@ import RoomType3 from '@/assets/roomType-3.png';
 import RoomScenic1 from '@/assets/room-scenic-1.png';
 import RoomScenic2 from '@/assets/room-scenic-2.png';
 import RoomScenic3 from '@/assets/room-scenic-3.png';
-import './RoomTypeCard.scss';
 export default {
     props: ['roomImage', 'roomTypeTitle', 'roomTypePrice', 'checkoutDetailDate', 'checkoutDetailAdultPerson', 'checkoutDetailChildPerson'],
     name: 'RoomTypeCard',

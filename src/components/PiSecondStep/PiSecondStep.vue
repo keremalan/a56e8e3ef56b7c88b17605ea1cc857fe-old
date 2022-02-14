@@ -1,6 +1,6 @@
 <template>
     <StatusVue/>
-    <PIndicatorVue/>
+    <PIndicatorVue stepCount="Adim 2/4" />
     <div class="pi-second">
         <h2 class="pi-second-headline2">Tarih ve Kisi Secimi</h2>
         <span class="pi-second-span">Otele giris ve cikis tarihlerinizle birlikte, ziyaretinize kac kisinin katilacagini seciniz.</span>
@@ -72,7 +72,7 @@
             </div>
         </div>
         </div>
-        <button><a href="#/">Geri</a></button><button><a href="#/step3">Ileri</a></button>
+        <div class="buttons"><button><a href="#/">Geri</a></button><button><a href="#/step3">Ileri</a></button></div>
     </div>
 </template>
 <script>

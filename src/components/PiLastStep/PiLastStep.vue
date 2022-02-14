@@ -1,6 +1,6 @@
 <template>
     <StatusVue/>
-    <PIndicatorVue/>
+    <PIndicatorVue stepCount="Adim 4/4" />
     <div class="pi-last">
         <h2 class="pi-last-headline2">Onizleme ve Odeme Islemleri</h2>
         <div class="pi-last--checkout">

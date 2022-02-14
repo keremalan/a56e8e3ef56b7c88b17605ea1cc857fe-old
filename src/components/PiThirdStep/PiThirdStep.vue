@@ -1,6 +1,6 @@
 <template>
     <StatusVue/>
-    <PIndicatorVue/>
+    <PIndicatorVue stepCount="Adim 3/4" />
     <div class="roomType-Scenic">
         <div class="roomType">
             <h2 class="roomType-headline2">Oda Tipi</h2>

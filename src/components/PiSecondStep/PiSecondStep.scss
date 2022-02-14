@@ -52,6 +52,11 @@
     margin-right: 2vw;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media only screen and (max-width: 375px) {
     .pi-second-inputs {
         margin: 0 4vw;
